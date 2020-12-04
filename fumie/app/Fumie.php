@@ -6,5 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Fumie extends Model
 {
-    //
+    protected $fillable = ['gyousha_name'];
+
+    /**
+     * この投稿を所有するユーザ。（ Userモデルとの関係を定義）
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

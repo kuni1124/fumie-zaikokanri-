@@ -81,8 +81,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                {!! link_to_route('gyousha', '業者登録', [], ['class' => 'gyousha-link']) !!}
                 </div>
+               
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>

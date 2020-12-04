@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('gyousha', 'FumiesController@index')->name('gyousha');
+Route::get('create', 'FumiesController@create')->name('gyousha-create');
+Route::post('store', 'FumiesController@store')->name('gyousha-store');
